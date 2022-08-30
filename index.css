@@ -1,0 +1,262 @@
+body {
+
+    margin: 0;
+    
+
+}
+
+
+html {
+
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+
+}
+
+
+.nav-container {
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 25px 40px 25px 40px;
+    color: hsl(0, 0%, 41%);
+
+}
+
+#logo {
+
+    vertical-align: middle;
+}
+
+.links {
+
+    display: flex;
+    gap: 50px;
+}
+
+.left {
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.left-child {
+
+    position: relative;
+}
+
+
+
+a:hover {
+
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+
+}
+
+.dropdown-btn:hover {
+
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+.dropdown-item:hover {
+
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.dropdown {
+
+    position: absolute;
+    padding: 10px 25px 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 .2rem 1rem 0 rgba(0, 0, 0, 0.2);
+    top: 40px;
+    z-index: 1000;
+    background-color: white;
+    
+    
+
+}
+
+#list-one {
+
+    height: 150px;
+    right: 0px;
+    display: none;
+    z-index: 100;
+}
+
+.show {
+
+    display: flex !important;
+}
+
+.showarrow {
+
+    display: inline-flex !important;
+}
+
+.hide {
+
+    display: none !important;
+}
+
+
+
+
+#list-two {
+    display: none;
+    height: 110px;
+    top: 40px;
+    width: 75px;
+}
+
+
+
+.dropdown-item {
+
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.arrow-up {
+
+    display: none;
+}
+
+
+
+.right {
+
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+button {
+
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 12px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1em;
+
+}
+
+#btn1 {
+
+    color: hsl(0, 0%, 41%);
+    border: 2px solid hsl(0, 0%, 41%);
+
+}
+
+#btn1:hover {
+
+    border-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+
+}
+
+#btn2 {
+
+    padding: 18px 32px 18px 32px;
+    background: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    font-size: 1.1em;
+    border: 1px solid hsl(0, 0%, 8%);
+    transition: .2s ease;
+}
+
+#btn2:hover {
+
+    cursor: pointer;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+
+}
+
+.right-child:hover {
+
+    color:hsl(0, 0%, 8%);
+    cursor: pointer;
+
+}
+
+
+.middle-container {
+
+    display: flex;
+    height: 750px;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 25px;
+}
+
+#heading {
+
+    font-size: 5em;
+    font-weight: 600;
+
+}
+
+p {
+
+    font-size: 1.1em;
+    line-height: 25px;
+    color: hsl(0, 0%, 41%);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.content-child {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.client-child {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-container {
+
+
+}
+
+#desktop-img {
+
+    height: 100%;
+}
