@@ -1,48 +1,36 @@
 
-// required variables
-
-const features = document.getElementById("features");
-const company = document.getElementById("company");
 
 
-const arrowFeatureUp = document.getElementById("arrow-features-up");
-const arrowFeatureDown = document.getElementById("arrow-features-down");
-const arrowCompanyUp = document.getElementById("arrow-company-up");
-const arrowCompanyDown = document.getElementById("arrow-company-down");
+/* Open and close dropdown menu */
 
-const featureDropdown = document.getElementById("list-one");
-const companyDropdown = document.getElementById("list-two");
+let dropdowns = document.getElementsByClassName('dropdown');
 
-
-// opens/closes feature dropdown menu
-
-
-features.addEventListener("click", openFeatures);
-
+let featureArrowUp = document.getElementById('featurearrowup');
+let featureArrowDown = document.getElementById('featurearrowdown');
+let featureTarget = document.getElementById('feature-target');
+let featureMenu = document.getElementById('features-drop');
+let companyTarget = document.getElementById('company-target');
+let companyMenu = document.getElementById('company-drop');
+let companyArrowUp = document.getElementById('companyarrowup');
+let companyArrowDown = document.getElementById('companyarrowdown');
 
 
 function openFeatures() {
+    featureMenu.classList.toggle('show');
+    featureArrowUp.classList.toggle('showarrow');
+    featureArrowDown.classList.toggle('hide');
+  }
 
+  
+companyTarget.addEventListener("click", openCompany);
 
-
-    featureDropdown.classList.toggle("show");
-    arrowFeatureUp.classList.toggle("showarrow");
-    arrowFeatureDown.classList.toggle("hide");
-
-
-
-}
-
-// opens/closes company dropdown menu
-
-company.addEventListener("click", openCompany);
 
 function openCompany() {
 
-
-    companyDropdown.classList.toggle("show");
-    arrowCompanyUp.classList.toggle("showarrow");
-    arrowCompanyDown.classList.toggle("hide");
+    companyMenu.classList.toggle('show');
+    companyArrowUp.classList.toggle('showarrow');
+    companyArrowDown.classList.toggle('hide');
+    
 
 }
 
@@ -51,32 +39,68 @@ function openCompany() {
 window.addEventListener("click", function (e) {
 
 
+    if (!featureMenu.contains(e.target) && (!featureTarget.contains(e.target))) {
 
-    if (!featureDropdown.contains(e.target) && (!features.contains(e.target))) {
-
-        featureDropdown.classList.remove("show");
-        arrowFeatureUp.classList.remove("showarrow");
-        arrowFeatureDown.classList.remove("hide");
-
-
-
+        featureMenu.classList.remove("show");
+        featureArrowUp.classList.remove('showarrow');
+        featureArrowDown.classList.remove('hide');
 
     }
-
-
 })
+
 
 
 window.addEventListener("click", function (e) {
 
 
-    if (!companyDropdown.contains(e.target) && (!company.contains(e.target))) {
+    if (!companyMenu.contains(e.target) && (!companyTarget.contains(e.target))) {
 
-
-        companyDropdown.classList.remove("show");
-        arrowCompanyUp.classList.remove("showarrow");
-        arrowCompanyDown.classList.remove("hide");
+        companyMenu.classList.remove("show");
+        companyArrowUp.classList.remove('showarrow');
+        companyArrowDown.classList.remove('hide');
 
     }
-
 })
+
+  
+
+  
+
+
+
+
+
+
+/* Hamburger menu toggle */
+
+
+  
+let menu = document.getElementById("menu");
+let open = document.getElementById("open-menu");
+let close = document.getElementById("close-menu");
+let hamburger = document.getElementById("hamburger");
+
+  function toggleMenu() {
+
+    if (menu.classList.contains("showMenu")) {
+
+        menu.classList.remove("showMenu");
+        close.style.display = "none";
+        open.style.display = "block";
+
+    } else {
+
+        menu.classList.add("showMenu");
+        close.style.display = "block";
+        open.style.display = "none";
+    }
+
+  }
+
+
+
+ hamburger.addEventListener("click", toggleMenu);
+
+
+
+
