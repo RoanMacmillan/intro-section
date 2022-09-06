@@ -20,112 +20,145 @@
 
 <body>
 
-  <div class="nav-container">
+  <div class="container">
 
-    <div class="left">
 
-      <div class="left-child">
-        <img id="logo" src="./images/logo.svg">
-        
+
+    <div class="nav-container">
+
+      <img id="logo" src="./images/logo.svg">
+
+      <div id="menu" class="overlay">
+        <div id="top" class="o-child">
+          <div class="top-child">
+            <div id="feature-target" class="dropdown-menu" onclick="openFeatures()">
+
+            <a id="features">Features</a>
+            <img id="featurearrowdown" src="./images/icon-arrow-down.svg">
+            <img id="featurearrowup" class="arrow-up" src="./images/icon-arrow-up.svg">
+            </div>
+            <div id="features-drop" class="dropdown">
+              <div class="dropdown-child">
+                <img class="dropdown-img" src="./images/icon-todo.svg">
+                <a id="test">Todo List</a>
+              </div>
+              <div class="dropdown-child">
+                <img class="dropdown-img" src="./images/icon-calendar.svg">
+                <a>Calendar</a>
+              </div>
+              <div class="dropdown-child">
+
+                <img class="dropdown-img" src="./images/icon-reminders.svg">
+                <a>Reminders</a>
+              </div>
+              <div class="dropdown-child">
+
+                <img class="dropdown-img" src="./images/icon-planning.svg">
+                <a>Planning</a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="top-child">
+            <div class="dropdown-menu" id="company-target">
+            <a>Company</a>
+            <img id="companyarrowdown" src="./images/icon-arrow-down.svg">
+            <img id="companyarrowup" class="arrow-up" src="./images/icon-arrow-up.svg">
+            </div>
+            <div id="company-drop" class="dropdown">
+
+              <div class="dropdown-child"><a>History</a></div>
+              <div class="dropdown-child"><a>Our Team</a></div>
+              <div class="dropdown-child"><a>Planning</a></div>
+
+
+
+            </div>
+
+          </div>
+
+          <div class="top-child">
+            <a>Careers</a>
+          </div>
+          <div class="top-child">
+            <a>About</a>
+
+          </div>
+        </div>
+
+
+        <div id="bottom" class="o-child">
+          <div class="bottom-child">
+            <a>Login</a>
+          </div>
+
+          <div id="btn-2-child" class="bottom-child">
+            <button id="btn2" class="btn">Register</button>
+          </div>
+
+        </div>
       </div>
-      <div class="links">
-        <div class="left-child">
-          <div id="features" class="dropdown-btn">
-          <a>Features</a>
-          <img id="arrow-features-down" class="arrow-down" src="./images/icon-arrow-down.svg">
-          <img id="arrow-features-up" class="arrow-up" src="./images/icon-arrow-up.svg">
-          </div>
-          <div id="list-one" class="dropdown">
-              <div class="dropdown-item"><img src="./images/icon-todo.svg"><a>Todo List</a></div>
-              <div class="dropdown-item"><img src="./images/icon-calendar.svg"><a>Calendar</a></div>
-              <div class="dropdown-item"><img src="./images/icon-reminders.svg"><a>Reminders</a></div>
-              <div class="dropdown-item"><img src="./images/icon-planning.svg"><a>Planning</a></div>
-
-            
-
-          </div>
-        </div>
-        <div class="left-child">
-          <div id="company" class="dropdown-btn">
-          <a>Company</a>
-          <img id="arrow-company-down" class="arrow-down" src="./images/icon-arrow-down.svg">
-          <img id="arrow-company-up" class="arrow-up" src="./images/icon-arrow-up.svg">
-          </div>
-          <div id="list-two" class="dropdown">
-            
-            <div class="dropdown-item"><a>History</a></div>
-            <div class="dropdown-item"><a>Our Team</a></div>
-            <div class="dropdown-item"><a>Blog</a></div>
-
-
-          
-
-        </div>
-
-        </div>
-        <div class="left-child">
-
-          <a>Careers</a>
-        </div>
-        <div class="left-child">
-
-          <a>About</a>
-        </div>
+      <div id="hamburger">
+        <img id="open-menu" src="./images/icon-menu.svg">
+        <img id="close-menu" src="./images/icon-close-menu.svg">
       </div>
+
+
     </div>
-    <div class="right">
-      <div class="right-child">
-        <a>Login</a>
-      </div>
-      <div class="right-child">
-      <button class="btn" id="btn1">Register</button>
-      </div>
-    </div>
-  </div>
-  </div>
 
-  <div class="middle-container">
+
     <div class="content-container">
 
+      <div class="img-child">
+        <img id="mobile-img" src="./images/image-hero-mobile.png">
+        <img id="desktop-img" src="./images/image-hero-desktop.png">
+      </div>
+
       <div class="content-child">
-        <div class="heading-child">
-      <span id="heading">Make<br>remote work</span>
-      </div>
-          <div class="heading-child">
-      <p>Get your team in sync, no matter your location.<br>Streamline processes,
-        create team rituals, and<br> watch productivity soar.</p>
+        <div id="heading-text" class="text-child"><span id="heading">Make <br id="heading-break"> remote work</span>
         </div>
-        <div class="heading-child">
-      <button class="btn" id="btn2">Learn more</button>
-          </div>
+        <div class="text-child">
+          <p id="para">Get your team in sync, no matter your location. Streamline processes, create team rituals, and
+            watch
+            productivity soar.</p>
+        </div>
+        <div id="btn-div" class="text-child"><button id="btn1" class="btn">Learn more</button></div>
+        <div class="partner-container">
+          <div class="partner-img-container"><img src="./images/client-databiz.svg"></div>
+          <div class="partner-img-container"><img src="./images/client-audiophile.svg"></div>
+          <div class="partner-img-container"><img src="./images/client-meet.svg"></div>
+          <div class="partner-img-container"><img src="./images/client-maker.svg"></div>
+
+        </div>
+
       </div>
 
-      <div class="client-child">
 
-      <img src="./images/client-databiz.svg">
-      <img src="./images/client-audiophile.svg">
-      <img src="./images/client-meet.svg">
-      <img src="./images/client-maker.svg">
-
-      </div>
-
-    </div>
-    
-
-    <div class="img-container">
-
-
-
-      <img id="desktop-img" src="./images/image-hero-desktop.png">
 
 
     </div>
+
+
+
+
+
+
+
+
+
 
   </div>
 
-
-
   <script src="./script.js"></script>
+
+
 </body>
 
 </html>
+
+<!--
+
+-->
